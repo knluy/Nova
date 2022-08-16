@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "acn.md",
-            "mode": "source"
+            "file": "Office/CCNA Expectations vs. Reality.md",
+            "mode": "source",
+            "source": false
           }
         },
         "group": "c044091608982649"
@@ -21,8 +22,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "acn.md",
-            "mode": "preview"
+            "file": "Office/CCNA Expectations vs. Reality.md",
+            "mode": "preview",
+            "source": false
           }
         },
         "group": "c044091608982649"
@@ -97,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "acn.md",
+                "file": "Office/CCNA Expectations vs. Reality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,15 +131,15 @@
   },
   "active": "f6dfee41840847b4",
   "lastOpenFiles": [
+    "Office/CCNA Goal Setting.md",
+    "Office/CCNA Interview Tips.md",
+    "Office/Common Entry Level CCNA Jobs.md",
+    "Office/CCNA Expectations vs. Reality.md",
+    "Office/Career Goals.md",
     "acn.md",
     "Untitled.md",
     "GNS3 AND PHYSICAL NETWORK.md",
     "VMWARE.md",
-    "Tech/CCNA/IPv4 Addressing/Subnet Mask.md",
-    "Tech/CCNA/IPv4 Addressing/Understanding IPv4 Addressing.md",
-    "Tech/CCNA/IPv4 Addressing/What is an IP address.md",
-    "Tech/SPSP/Images/edgeconnect.PNG",
-    "Tech/SPSP/Images/ec-v.PNG",
-    "Tech/SPSP/Images/BIO.PNG"
+    "Tech/CCNA/IPv4 Addressing/Subnet Mask.md"
   ]
 }

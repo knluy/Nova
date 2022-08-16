@@ -3,7 +3,7 @@
   "foldHeading": true,
   "foldIndent": true,
   "defaultViewMode": "preview",
-  "legacyEditor": true,
+  "legacyEditor": false,
   "livePreview": true,
   "pdfExportSettings": {
     "pageSize": "Letter",
