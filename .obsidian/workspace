@@ -1,33 +1,45 @@
 {
   "main": {
-    "id": "0e4b10870e494bd1",
+    "id": "e8ed36be89a4453d",
     "type": "split",
     "children": [
       {
-        "id": "03ee2c1d18db64e6",
+        "id": "f6dfee41840847b4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ken Final Notes/Tech/CCNA/Ethernet Technology/Network Cabling.md",
-            "mode": "source",
-            "source": false
+            "file": "acn.md",
+            "mode": "source"
           }
-        }
+        },
+        "group": "c044091608982649"
+      },
+      {
+        "id": "d5ce795b7bdfc452",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "acn.md",
+            "mode": "preview"
+          }
+        },
+        "group": "c044091608982649"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "98a75570583da759",
+    "id": "4642e90b44f77bd8",
     "type": "split",
     "children": [
       {
-        "id": "8c03bd1b2df3c5b4",
+        "id": "00f4d43c98c508ed",
         "type": "tabs",
         "children": [
           {
-            "id": "ad8bb86e9c3af962",
+            "id": "bac96ee93bf193d9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -35,12 +47,12 @@
             }
           },
           {
-            "id": "b3c25db80b4adf85",
+            "id": "d92eefaacde2a1a9",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,60 +60,56 @@
                 "sortOrder": "alphabetical"
               }
             }
-          },
-          {
-            "id": "40e028b8be34e03d",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 214
   },
   "right": {
-    "id": "d299036e8d4d3647",
+    "id": "631e2bf6aa43ec0b",
     "type": "split",
     "children": [
       {
-        "id": "b98b80dd431a0057",
+        "id": "0d91e0bce089f16b",
         "type": "tabs",
+        "dimension": 31.322207958921695,
         "children": [
           {
-            "id": "41fd7a241a490928",
+            "id": "6948319a8f8b6387",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "7bfb068aaeee7f65",
+        "type": "tabs",
+        "dimension": 68.6777920410783,
+        "children": [
+          {
+            "id": "bef503584ed9b14f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ken Final Notes/Tech/CCNA/Ethernet Technology/Network Cabling.md",
+                "file": "acn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
           {
-            "id": "2f76a86935b92f70",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Ken Final Notes/Tech/CCNA/Ethernet Technology/Network Cabling.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "1c48f29f44028556",
+            "id": "37c101444d2b7004",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -110,32 +118,26 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "2e5afa2ed9ced6e0",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Ken Final Notes/Tech/CCNA/Ethernet Technology/Network Cabling.md"
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "03ee2c1d18db64e6",
+  "active": "f6dfee41840847b4",
   "lastOpenFiles": [
-    "Ken Final Notes/Tech/CCNA/Ethernet Technology/Full Duplex vs. Half Duplex.md",
-    "Ken Final Notes/Tech/CCNA/Ethernet Technology/Ethernet LAN Summary.md",
-    "Ken Final Notes/Tech/CCNA/Ethernet Technology/Broadcast and Collision.md",
-    "Ken Final Notes/Untitled.md",
-    "Ken Final Notes/Juniper Best Practices.md",
-    "Ken Final Notes/GNS3 AND PHYSICAL NETWORK.md",
-    "Ken Final Notes/acn.md",
-    "Ken Final Notes/00 - Welcome/Start Here.md"
+    "acn.md",
+    "Untitled.md",
+    "GNS3 AND PHYSICAL NETWORK.md",
+    "VMWARE.md",
+    "Tech/CCNA/IPv4 Addressing/Subnet Mask.md",
+    "Tech/CCNA/IPv4 Addressing/Understanding IPv4 Addressing.md",
+    "Tech/CCNA/IPv4 Addressing/What is an IP address.md",
+    "Tech/SPSP/Images/edgeconnect.PNG",
+    "Tech/SPSP/Images/ec-v.PNG",
+    "Tech/SPSP/Images/BIO.PNG"
   ]
 }
