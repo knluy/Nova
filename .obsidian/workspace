@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tech/VMWARE.md",
+            "file": "Office/Office Work.md",
             "mode": "preview",
             "source": false
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tech/VMWARE.md",
+            "file": "Office/Office Work.md",
             "mode": "preview",
             "source": false
           }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech/VMWARE.md",
+                "file": "Office/Office Work.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,6 +131,8 @@
   },
   "active": "bac96ee93bf193d9",
   "lastOpenFiles": [
+    "README.md",
+    "Tech/VMWARE.md",
     "Tech/acn.md",
     "Tech/GNS3 AND PHYSICAL NETWORK.md",
     "Tech/JNCIA/Juniper Best Practices.md",
@@ -138,8 +140,6 @@
     "Tech/JNCIA/Untitled 2.md",
     "Tech/JNCIA/Untitled.md",
     "Tech/JNCIA/Untitled 1.md",
-    "Tech/VMWARE.md",
-    "Office/CCNA Expectations vs. Reality.md",
-    "Office/CCNA Goal Setting.md"
+    "Office/CCNA Expectations vs. Reality.md"
   ]
 }
