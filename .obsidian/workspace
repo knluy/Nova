@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Office/CCNA Expectations vs. Reality.md",
-            "mode": "source",
+            "file": "Tech/VMWARE.md",
+            "mode": "preview",
             "source": false
           }
         },
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Office/CCNA Expectations vs. Reality.md",
+            "file": "Tech/VMWARE.md",
             "mode": "preview",
             "source": false
           }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Office/CCNA Expectations vs. Reality.md",
+                "file": "Tech/VMWARE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f6dfee41840847b4",
+  "active": "bac96ee93bf193d9",
   "lastOpenFiles": [
-    "Office/CCNA Goal Setting.md",
-    "Office/CCNA Interview Tips.md",
-    "Office/Common Entry Level CCNA Jobs.md",
+    "Tech/acn.md",
+    "Tech/GNS3 AND PHYSICAL NETWORK.md",
+    "Tech/JNCIA/Juniper Best Practices.md",
+    "Tech/JNCIA/Untitled 3.md",
+    "Tech/JNCIA/Untitled 2.md",
+    "Tech/JNCIA/Untitled.md",
+    "Tech/JNCIA/Untitled 1.md",
+    "Tech/VMWARE.md",
     "Office/CCNA Expectations vs. Reality.md",
-    "Office/Career Goals.md",
-    "acn.md",
-    "Untitled.md",
-    "GNS3 AND PHYSICAL NETWORK.md",
-    "VMWARE.md",
-    "Tech/CCNA/IPv4 Addressing/Subnet Mask.md"
+    "Office/CCNA Goal Setting.md"
   ]
 }
