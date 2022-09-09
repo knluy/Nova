@@ -9,25 +9,11 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Office/Office Work.md",
-            "mode": "preview",
+            "file": "LABS/README.md",
+            "mode": "source",
             "source": false
           }
-        },
-        "group": "c044091608982649"
-      },
-      {
-        "id": "d5ce795b7bdfc452",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Office/Office Work.md",
-            "mode": "preview",
-            "source": false
-          }
-        },
-        "group": "c044091608982649"
+        }
       }
     ],
     "direction": "vertical"
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Office/Office Work.md",
+                "file": "LABS/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,8 +115,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bac96ee93bf193d9",
+  "active": "f6dfee41840847b4",
   "lastOpenFiles": [
+    "Office/Office Work.md",
     "README.md",
     "Tech/VMWARE.md",
     "Tech/acn.md",
@@ -139,7 +126,6 @@
     "Tech/JNCIA/Untitled 3.md",
     "Tech/JNCIA/Untitled 2.md",
     "Tech/JNCIA/Untitled.md",
-    "Tech/JNCIA/Untitled 1.md",
-    "Office/CCNA Expectations vs. Reality.md"
+    "Tech/JNCIA/Untitled 1.md"
   ]
 }
