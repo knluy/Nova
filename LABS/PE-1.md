@@ -10,16 +10,7 @@ vlan 10
 name DATA
 exit
 
-int range e0/0-1
-switchport trunk encapsulation dot1q
-switchport mode trunk
-exit
-
-int e0/2
-channel-group 1 mode active
-exit
-
-int po1
+int range e0/0-2
 switchport trunk encapsulation dot1q
 switchport mode trunk
 exit
@@ -28,7 +19,12 @@ int vlan 5
 ip address 192.168.1.1 255.255.255.0
 no shut
 exit
----
+
+int vlan 10
+ip address 192.168.2.1 255.255.255.0
+no shut
+exit
+
 
 int e0/3
 no switchport
@@ -43,3 +39,6 @@ ip address 100.0.0.13 255.255.255.252
 description LINK CORE-RTR-2 TO PE-1
 no shut
 exit
+
+---
+

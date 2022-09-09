@@ -18,8 +18,9 @@ switchport mode access
 switchport access vlan 5
 exit
 
----
 int e0/3
 switchport mode access
 switchport access vlan 10
 exit
+
+---
