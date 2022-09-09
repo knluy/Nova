@@ -1,0 +1,11 @@
+
+
+conf t
+hostname CORE-RTR-1
+
+int e0/1
+ip address 100.0.0.5 255.255.255.252
+description LINK CORE-RTR-1 TO PE-1
+no shut
+exit
+

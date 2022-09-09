@@ -1,0 +1,11 @@
+
+
+conf t
+host CORE-RTR-2
+
+
+int e1/0
+ip address 100.0.0.14 255.255.255.252
+description LINK CORE-RTR-2 TO PE-1
+no shut
+exit
