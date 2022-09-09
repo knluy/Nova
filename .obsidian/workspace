@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "LABS/Untitled.md",
+            "file": "LABS/SWTH-2.md",
             "mode": "source",
             "source": false
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABS/Untitled.md",
+                "file": "LABS/SWTH-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +115,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bac96ee93bf193d9",
+  "active": "f6dfee41840847b4",
   "lastOpenFiles": [
+    "LABS/Untitled.md",
+    "LABS/SWTH-2.md",
     "LABS/README.md",
     "Office/Office Work.md",
     "README.md",
@@ -124,8 +126,6 @@
     "Tech/acn.md",
     "Tech/GNS3 AND PHYSICAL NETWORK.md",
     "Tech/JNCIA/Juniper Best Practices.md",
-    "Tech/JNCIA/Untitled 3.md",
-    "Tech/JNCIA/Untitled 2.md",
-    "Tech/JNCIA/Untitled.md"
+    "Tech/JNCIA/Untitled 3.md"
   ]
 }
