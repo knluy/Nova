@@ -23,3 +23,18 @@ int po1
 switchport trunk encapsulation dot1q
 switchport mode trunk
 exit
+
+---
+
+int e0/3
+ip address 100.0.0.9 255.255.255.252
+description LINK CORE-RTR-2 TO PE-2
+no shut
+exit
+
+
+int e1/0
+ip address 100.0.0.17 255.255.255.252
+description LINK CORE-RTR-1 TO PE-2
+no shut
+exit

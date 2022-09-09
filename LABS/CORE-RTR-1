@@ -9,3 +9,14 @@ description LINK CORE-RTR-1 TO PE-1
 no shut
 exit
 
+int e0/2
+ip address 100.0.0.18 255.255.255.252
+description LINK CORE-RTR-1 TO PE-2
+no shut
+exit
+
+int e0/0
+ip address 100.0.0.1 255.255.255.252
+description LINK CORE-RTR-1 TO CORE-RTR-2
+no shut
+exit
