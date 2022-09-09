@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "LABS/SWTH-2.md",
-            "mode": "source",
+            "file": "LABS/PE-2.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABS/SWTH-2.md",
+                "file": "LABS/PE-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,15 +117,15 @@
   },
   "active": "f6dfee41840847b4",
   "lastOpenFiles": [
-    "LABS/Untitled.md",
+    "Tech/CCNP/Routing Protocols/BGP/Images/ibgp-6-routers-full-mesh.png",
     "LABS/SWTH-2.md",
+    "LABS/Untitled.md",
     "LABS/README.md",
     "Office/Office Work.md",
     "README.md",
     "Tech/VMWARE.md",
     "Tech/acn.md",
     "Tech/GNS3 AND PHYSICAL NETWORK.md",
-    "Tech/JNCIA/Juniper Best Practices.md",
-    "Tech/JNCIA/Untitled 3.md"
+    "Tech/JNCIA/Juniper Best Practices.md"
   ]
 }
