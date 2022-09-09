@@ -31,12 +31,14 @@ exit
 ---
 
 int e0/3
+no switchport
 ip address 100.0.0.6 255.255.255.252
 description LINK CORE-RTR-1 TO PE-1
 no shut
 exit
 
 int e1/0
+no switchport
 ip address 100.0.0.13 255.255.255.252
 description LINK CORE-RTR-2 TO PE-1
 no shut
