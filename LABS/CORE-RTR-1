@@ -20,3 +20,16 @@ ip address 100.0.0.1 255.255.255.252
 description LINK CORE-RTR-1 TO CORE-RTR-2
 no shut
 exit
+
+router ospf 1
+router-id 1.1.1.1
+network 100.0.0.0 0.0.0.3 area 0
+network 100.0.0.4 0.0.0.3 area 0
+network 100.0.0.16 0.0.0.3 area 0
+exit
+
+int e0/0
+ip ospf cost 5
+exit
+
+---
