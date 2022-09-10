@@ -4,19 +4,19 @@ conf t
 host CORE-RTR-2
 
 
-int e0/3
+int g0/3
 ip address 100.0.0.14 255.255.255.252
 description LINK CORE-RTR-2 TO PE-1
 no shut
 exit
 
-int e0/2
+int eg/2
 ip address 100.0.0.10 255.255.255.252
 description LINK CORE-RTR-2 TO PE-2
 no shut
 exit
 
-int e0/0
+int g0/0
 ip address 100.0.0.2 255.255.255.252
 description LINK CORE-RTR-1 TO CORE-RTR-2
 no shut
@@ -29,7 +29,7 @@ network 100.0.0.8 0.0.0.3 area 0
 network 100.0.0.12 0.0.0.3 area 0
 exit
 
-int e0/0
+int g0/0
 ip ospf cost 5
 exit
 
