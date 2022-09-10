@@ -11,5 +11,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "Tech/CCNA/Images"
 }
