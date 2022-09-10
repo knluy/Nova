@@ -7,11 +7,9 @@
         "id": "bb11aeee9f9ede26",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "image",
           "state": {
-            "file": "LABS/IMAGES.md",
-            "mode": "preview",
-            "source": false
+            "file": "LABS/smokeping server 2.PNG"
           }
         }
       }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LABS/IMAGES.md",
+                "file": "LABS/smokeping server 2.PNG",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,15 +115,15 @@
   },
   "active": "bb11aeee9f9ede26",
   "lastOpenFiles": [
-    "Tech/CCNA/Images/Pasted image 20220910090406.png",
+    "LABS/smokeping server.PNG",
+    "LABS/smokeping server 2.PNG",
     "LABS/IMAGES.md",
+    "Tech/CCNA/Images/Pasted image 20220910090406.png",
     "LABS/PE-2.md",
     "Tech/CCNP/Routing Protocols/BGP/Images/ibgp-6-routers-full-mesh.png",
     "LABS/SWTH-2.md",
     "LABS/README.md",
     "Office/Office Work.md",
-    "README.md",
-    "Tech/VMWARE.md",
-    "Tech/acn.md"
+    "README.md"
   ]
 }
