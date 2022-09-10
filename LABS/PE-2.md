@@ -19,20 +19,13 @@ ip address 192.168.3.2 255.255.255.0
 no shut
 exit
 
-int range e0/0-2
+int range g0/2
 switchport trunk encapsulation dot1q
 switchport mode trunk
 exit
 
 
-int po1
-switchport trunk encapsulation dot1q
-switchport mode trunk
-exit
-
----
-
-int e0/3
+int g0/3
 no switchport
 ip address 100.0.0.9 255.255.255.252
 description LINK CORE-RTR-2 TO PE-2
@@ -40,7 +33,7 @@ no shut
 exit
 
 
-int e1/0
+int g1/0
 no switchport
 ip address 100.0.0.17 255.255.255.252
 description LINK CORE-RTR-1 TO PE-2
@@ -58,5 +51,14 @@ network 192.168.2.0 0.0.0.255 area 0
 network 192.168.3.0 0.0.0.255 area 0
 exit
 
+int e0/0
+switchport mode access
+switchport access vlan 5
+exit
+
+int e0/3
+switchport mode access
+switchport access vlan 10
+exit
 ---
 
