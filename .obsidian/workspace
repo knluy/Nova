@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +115,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bb11aeee9f9ede26",
+  "active": "bac96ee93bf193d9",
   "lastOpenFiles": [
     "Archives/Template/SUMMARY TEMPLATE.md",
     "Archives/Template/PAGE TEMPLATE.md",
