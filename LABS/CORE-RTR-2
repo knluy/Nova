@@ -3,14 +3,13 @@
 conf t
 host CORE-RTR-2
 
-
 int g0/3
 ip address 100.0.0.14 255.255.255.252
 description LINK CORE-RTR-2 TO PE-1
 no shut
 exit
 
-int eg/2
+int g0/2
 ip address 100.0.0.10 255.255.255.252
 description LINK CORE-RTR-2 TO PE-2
 no shut
