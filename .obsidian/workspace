@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Archives/Template/PAGE TEMPLATE.md",
-            "mode": "source",
+            "file": "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archives/Template/PAGE TEMPLATE.md",
+                "file": "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,17 +115,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bac96ee93bf193d9",
+  "active": "bb11aeee9f9ede26",
   "lastOpenFiles": [
-    "Archives/Template/SUMMARY TEMPLATE.md",
-    "Archives/Template/PAGE TEMPLATE.md",
-    "LABS/smokeping server 2.PNG",
-    "LABS/smokeping server.PNG",
-    "LABS/IMAGES.md",
-    "Tech/CCNA/Images/Pasted image 20220910090406.png",
-    "LABS/PE-2.md",
-    "Tech/CCNP/Routing Protocols/BGP/Images/ibgp-6-routers-full-mesh.png",
-    "LABS/SWTH-2.md",
-    "LABS/README.md"
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Message Types.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection Algorithm.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Peer Groups.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Route Reflector.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP States and Timers.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Synchronization.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/DRAFT.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/IPV4 and IPV6 Address Families.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/What is BGP.md"
   ]
 }
