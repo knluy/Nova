@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
-            "mode": "preview",
+            "file": "Google Cloud Platform.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
+                "file": "Google Cloud Platform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,8 +117,8 @@
   },
   "active": "bb11aeee9f9ede26",
   "lastOpenFiles": [
-    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Message Types.md",
     "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection.md",
+    "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Message Types.md",
     "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Path Selection Algorithm.md",
     "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Peer Groups.md",
     "Tech/CCNP/Routing Protocols/BGP/Lectures/BGP Route Reflector.md",
