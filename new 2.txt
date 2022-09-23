@@ -1,0 +1,89 @@
+
+
+
+gcloud compute images list --show-deprecated | grep ubuntu-1604-xenial-v20210928 -A 5
+
+kenz_luy@cloudshell:~ (glass-setting-344523)$ gcloud compute images list --show-deprecated | grep ubuntu-1604-xenial-v20210928 -A 5
+NAME: ubuntu-1604-xenial-v20210928
+PROJECT: ubuntu-os-cloud
+FAMILY: ubuntu-1604-lts
+DEPRECATED: DEPRECATED
+STATUS: READY
+
+gcloud compute images create nested-ubuntu-1604 --source-image=ubuntu-1604-xenial-v20210928 --source-image-project=ubuntu-os-cloud --licenses https://www.googleapis.com/compute/v1/projects/vm-options/global/licenses/enable-vmx
+
+find a ubuntu 1604
+================
+gcloud compute images list --show-deprecated | grep ubuntu-1604-xenial-v20210928 -A 5
+
+create a nest version of the image
+=========================
+gcloud compute images create nested-ubuntu-1604 --source-image=ubuntu-1604-xenial-v20210928 --source-image-project=ubuntu-os-cloud --licenses="https://www.googleapis.com/compute/v1..."
+
+create a vm
+====================
+!! need to ensure that eth0 is the network interface 
+
+sudo nano /etc/network/interfaces
+
+delete
+---------
+auto ens33
+iface ens33 inet dhcp
+
+put this
+-----------
+auto eth0
+iface eth0 inet dhcp
+
+
+
+install EVE
+=====================
+! command in eve communinity doc, pg 49
+sudo -i
+wget -O - http://www.eve-ng.net/repo/install-eve.sh | bash -i
+apt update -y && apt upgrade -y
+
+!! if unsucessful, you will fail the reboot
+
+Reboot
+
+Important! Upon prompt to key in password, do not key in password. Do this first
+==========================
+ctrl - c, # sudo -i, press Enter
+
+
+wget -O - https://www.eve-ng.net/focal/install-eve.sh | bash -i
+
+----
+
+When you create the vm turn off these settings as shown in image
+
+Shielded VM
+Secure Boot = Off
+vTPM = Off
+Integrity Monitoring = Off
+
+———————————————————
+Run this before PNETLab installation
+
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+————————————————————
+And make the interface look like this
+
+# The primary network interface
+iface eth0 inet manual
+auto pnet0
+iface pnet0 inet dhcp
+    pre-up ip link set dev eth0 up
+    dns-nameservers 8.8.8.8
+    bridge_ports eth0
+    bridge_stp off
+	
+	
+	
+sudo iptables -t nat -D POSTROUTING -o pnet0 -s 192.168.254.0/24 -j MASQUERADE
+
+sudo iptables -t nat -A POSTROUTING -o pnet0 -s <MANAGEMENT_SUBNET> -j MASQUERADE

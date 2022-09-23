@@ -1,0 +1,38 @@
+
+
+config
+system
+ host-name vbond
+ system-ip 1.1.1.2
+ site-id 1000
+ organization-name "sdwan-testlab"
+ vbond 172.16.255.2 local vbond-only
+!
+vpn 0
+ interface ge0/0
+  no tunnel-interface
+  ip address 172.16.255.2/24
+  no shutdown
+ !
+!
+vpn 512
+ interface eth0
+  ip dhcp-client
+  no shutdown
+ !
+commit and-quit
+!
+
+
+
+config
+vpn 0
+ interface ge0/0
+  tunnel-interface
+   encapsulation ipsec
+  !
+  no shutdown
+ !
+!
+commit and-quit
+!

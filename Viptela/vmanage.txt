@@ -1,0 +1,84 @@
+
+
+config
+system
+ system-ip 1.1.1.1
+ site-id 1000
+ organization-name "sdwan-testlab"
+ vbond 172.16.255.2
+!
+vpn 0
+ no interface eth0
+ interface eth1
+  ip address 172.16.255.1/24
+  tunnel-interface
+  !
+  no shutdown
+ !
+vpn 512
+  interface eth0
+  ip dhcp-client
+  no shutdown
+!
+commit and-quit
+!
+     
+
+
+---
+
+OPENSSL KEY
+openssl genrsa -out ROOTCA.key 2048
+
+OPENSSL CERTIFICATE
+openssl req -x509 -new -nodes -key ROOTCA.key -sha256 -days 2000 \
+    -subj "/C=AU/ST=NSW/L=NSW/O=sdwan-testlab/CN=vmanage.lab" \
+    -out ROOTCA.pem
+	
+web_cert.csr
+
+SIGN CERTIFICATE
+openssl x509 -req -in web_cert.csr -CA ROOTCA.pem -CAkey ROOTCA.key -CAcreateserial -out web_cert.crt -days 4000 -sha256
+
+openssl x509 -req -in vmanage_csr.csr -CA ROOTCA.pem -CAkey ROOTCA.key -CAcreateserial -out vmanage_csr.crt -days 4000 -sha256
+
+
+echo "-----BEGIN NEW CERTIFICATE REQUEST-----
+MIICtDCCAZwCAQAwbzELMAkGA1UEBhMCQVUxDDAKBgNVBAgTA05TVzEMMAoGA1UEBxMDTlNXMRYw
+FAYDVQQKEw1zZHdhbi10ZXN0bGFiMRYwFAYDVQQLEw1zZHdhbi10ZXN0bGFiMRQwEgYDVQQDEwt2
+bWFuYWdlLmxhYjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKHwYn9gf6usjhEgGmhw
+zafjWhjtKNEwAMDOzSA9Nb2teZCEyPWz5a6EGWoi2JVmJEGti8BKzST0ylOjTBfsUcOkuPDg46TS
+osGUkHUvpEVrT4C3mHFX4WOcVdPDCtV9l+454y7v24OHxykVyRYAHoSY1o7vNxJCq4xCHaZPQixl
+yXZ4VnyfbZ8TyU20uaWFtu9newZnqCd6UtszbR/k7wY/ooLsqjLOYsrNUS+IhydhFh1bJfw8pqb6
+1Lol6mmJaEUoKEEQpdme3rwyzBMXHxz0Fv1/y17AGPtZQmQOPKkf175/v4Y6xa8e49pDr8hKWbFG
+AGmdGk1DJz75aynhTGUCAwEAAaAAMA0GCSqGSIb3DQEBCwUAA4IBAQCJwYY2LY7MHCk/vL52o2iH
+HDFGyqQdFxGrZDicZ0MjOw8KAGEbOEkcduc6id8e2aA/55RgPNaqDef+92r+rgv/Z+/teDY3rg0I
+mFDBZQSArMn/xXNaTuhIcl+5V/SuOPN8HgurHnJJHlzmhZ2+1IRH1GQyu8h7FCfXxg5TuBaAADwk
+LcNp2NMr7/RA4icOmxwSbkYICK+X1eDzAb6pxkZrOspawBPmawW+excqVermPkhuinPDrbeJ48XJ
+cLuqLC+uVeSYyJ+8/WAV0fbnndFFsBvWKCsgvMf4yRkiSadgeiKEwGWXaNnUwJDiOS6buPGnQf3P
+K1ItcPEHWgIUrAVv
+-----END NEW CERTIFICATE REQUEST-----" > web_cert.csr
+
+
+-----BEGIN CERTIFICATE REQUEST-----
+MIIDTTCCAjUCAQAwgcwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlh
+MREwDwYDVQQHEwhTYW4gSm9zZTEWMBQGA1UECxMNc2R3YW4tdGVzdGxhYjEUMBIG
+A1UEChMLdklQdGVsYSBJbmMxQzBBBgNVBAMUOnZtYW5hZ2VfZDU2ZmFiNmMtNGI1
+YS00ZGY2LTkyMGQtNTk2ODUxOGZiMDM4XzAudmlwdGVsYS5jb20xIjAgBgkqhkiG
+9w0BCQEWE3N1cHBvcnRAdmlwdGVsYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQDFBuM0UHBce5vCxXT6T6SNboyHNUBqKtFSALr/2qihaGNxIkeO
+YY0hmSbw0fgeXPs0YvapdGmAk1PodmbcWfZRFJHxPWV8Uws+lK/zDuebbL9fG6su
+8bxI3paAXzW42kVWOYmhBd2QYLC3/TCLSfI65js6VnwUtDvP/iOvZsXkM0OcBOgk
+peBT144cIYFVGRG51fIn1Ybu8+y4xCImy8SpzFL9XRjo/WY7GfXZYHH+Tq0epeh9
+R9G0bJ93OGBhR+4jgcHqQufO/FC5IbjL67ZaWHzYIzsHqjR4tPzEZLTAKjKExohM
+IzaTSZX8x2JFHBmQ/hLA49pBDNvLliUZ/g4dAgMBAAGgOzA5BgkqhkiG9w0BCQ4x
+LDAqMAkGA1UdEwQCMAAwHQYDVR0OBBYEFEoLLjxN8ze9vcFowd/2GZcPIk30MA0G
+CSqGSIb3DQEBCwUAA4IBAQBhPdhEMzqSipI9qhohkJTYB5M4gTg6He01WRRPcFCr
+SVCbfIObYIWl2XrjldOWS5ptr3oOlWP6u9t3+TsJDTfBpaWvTyfHzVUgymr3HVJf
+eYifa90xWXKjRJwqJQ5vodOKJ+QHnJPVnOI3YLvCWi1iYL3lcBA2iELUDa0rIqFT
+W4oeqt0L8dtkZPpIVGDuWwap3hMUeH3UnMSd/dIb3YmFbWRQzGo8csa9mEBAtyVd
+wNAgdkIemXpItnoCfHU3NrrU6u14O8veo52z3ZfnjaMw38tSguskZ+F/tuyxHRgg
+LRLsZMckJpyQWR4YCunYQ5vWKXN3uhEdcHR/NyJ9/ZUT
+-----END CERTIFICATE REQUEST-----
+
+openssl x509 -req -in vmanage_csr -CA ROOTCA.pem -CAkey ROOTCA.key -CAcreateserial -out vmanage_csr.crt -days 4000 -sha256

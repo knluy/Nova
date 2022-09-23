@@ -42,7 +42,7 @@ echo "nameserver 8.8.8.8" > /etc/resolv.conf
 ————————————————————
 And make the interface look like this
 
-# The primary network interface
+The primary network interface
 iface eth0 inet manual
 auto pnet0
 iface pnet0 inet dhcp
@@ -50,3 +50,11 @@ iface pnet0 inet dhcp
     dns-nameservers 8.8.8.8
     bridge_ports eth0
     bridge_stp off
+
+- then proceed with the link above for the remaining config
+- use sudo -i passwd to change root password
+
+for NAT configuration, please use this link
+
+https://www.jagchanna.ca/deploying-eve-ng-on-gcp-part3/
+
