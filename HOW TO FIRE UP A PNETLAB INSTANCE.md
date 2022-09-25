@@ -58,3 +58,16 @@ for NAT configuration, please use this link
 
 https://www.jagchanna.ca/deploying-eve-ng-on-gcp-part3/
 
+Error skipping startup message. Your shell is probably
+
+
+
+LD_LIBRARY_PATH=/opt/unetlab/addons/iol/lib /opt/unetlab/addons/iol/bin/i86bi_LinuxL2-AdvEnterpriseK9-M_152_May_2018.bin 1
+
+
+LD_LIBRARY_PATH=/opt/unetlab/addons/iol/lib /opt/unetlab/addons/iol/bin/i86bi_LinuxL3-AdvEnterpriseK9-M2_157_3_May_2018.bin 1
+
+
+"C:\Program Files\TightVNC\tvnviewer.exe" -connect "%1"
+
+"C:\Program Files\TightVNC\tvnviewer.exe" -optionsfile="%1"
